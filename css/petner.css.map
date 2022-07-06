@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAA;EAAE,MAAM,EAAE,CAAC;EAAE,OAAO,EAAE,CAAC;EAAE,SAAS,EAAE,IAAI;CAAG",
+    "sources": [
+        "petner.scss"
+    ],
+    "names": [],
+    "file": "petner.css"
+}
