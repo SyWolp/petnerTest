@@ -1,2 +1,109 @@
 *{ margin: 0; padding: 0; font-size: 10px;}
 
+html,body {
+    margin: 0 auto;
+    width: 128rem;
+}
+.Wrap {
+    width: 100%;
+    .headTitle {
+        margin: 10rem auto;
+        text-align: center;
+        .headTtitleOne {
+            padding-bottom: 0.5rem;
+            font-weight: 400;
+            font-size: 2rem;
+        }
+        .headTtitleTwo {
+            font-weight: bold;
+            font-size: 2rem;
+        }
+    }
+    .mainContent {
+        overflow: hidden;
+        position: relative;
+        .buttons {
+            width: 5rem;
+            height: 5rem;
+            position: absolute;
+            line-height: 5.5rem;
+            cursor: pointer;
+            font-size: 3rem;
+            background-color: beige;
+            border-radius: 50%;
+            text-align: center;
+            z-index: 1;
+        }
+        .leftButton {
+            top: 50%;
+            left: 1rem;
+            transform: translate(0,-50%);
+        }
+        .rightButton {
+            top: 50%;
+            right: 1rem;
+            transform: translate(0,-50%);
+        }
+        .contentBox {
+            width: 200%;
+            height: 40rem;
+            padding: 1rem 0;
+            display: flex;
+            transition: 0.2s;
+            .petnerContent{
+                margin: 0 1rem;
+                border: 0.01rem solid rgb(137, 137, 137);
+                border-radius: 1rem;
+                box-shadow: 0.2rem 0.2rem 0.5rem gray;
+                flex: 1;
+                .contentHeader {
+                    display: flex;
+                    .contentHeaderLeft {
+                        flex: 0.5;
+                        .petners {
+                            width: 3rem;
+                            height: 3rem;
+                            margin: 1rem 3rem;
+                            border-radius: 50%;
+                        }
+                    }
+                    .contentHeaderRight {
+                        flex: 1;
+                        .petnerName {
+                            font-size: 1.5rem;
+                            margin-top: 1rem;
+                        }
+                    }
+                }
+                .cutePet{
+                    margin-top: 1rem;
+                    width: 100%;
+                    height: 25rem;
+                    overflow: hidden;
+                    .cutePetImg {
+                        width: 100%;
+                        height: 25rem;
+                    }
+                }
+                .contentFooter{
+                    display: flex;
+                    .times {
+                        flex: 1;
+                        text-align: center;
+                        line-height: 8rem;
+                        font-size: 1.5rem;
+                        color: rgba($color: #000000, $alpha: 0.5);
+                    }
+                    .petName {
+                        flex: 1;
+                        text-align: center;
+                        line-height: 8rem;
+                        font-size: 1.5rem;
+                        color: rgba($color: #000000, $alpha: 0.8);
+                    }
+                }
+            }
+        }
+
+    }
+}

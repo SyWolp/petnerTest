@@ -3,4 +3,151 @@
   padding: 0;
   font-size: 10px;
 }
+
+html, body {
+  margin: 0 auto;
+  width: 128rem;
+}
+
+.Wrap {
+  width: 100%;
+}
+
+.Wrap .headTitle {
+  margin: 10rem auto;
+  text-align: center;
+}
+
+.Wrap .headTitle .headTtitleOne {
+  padding-bottom: 0.5rem;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.Wrap .headTitle .headTtitleTwo {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.Wrap .mainContent {
+  overflow: hidden;
+  position: relative;
+}
+
+.Wrap .mainContent .buttons {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  line-height: 5.5rem;
+  cursor: pointer;
+  font-size: 3rem;
+  background-color: beige;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 1;
+}
+
+.Wrap .mainContent .leftButton {
+  top: 50%;
+  left: 1rem;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.Wrap .mainContent .rightButton {
+  top: 50%;
+  right: 1rem;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.Wrap .mainContent .contentBox {
+  width: 200%;
+  height: 40rem;
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.Wrap .mainContent .contentBox .petnerContent {
+  margin: 0 1rem;
+  border: 0.01rem solid #898989;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.5rem gray;
+          box-shadow: 0.2rem 0.2rem 0.5rem gray;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.Wrap .mainContent .contentBox .petnerContent .contentHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Wrap .mainContent .contentBox .petnerContent .contentHeader .contentHeaderLeft {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+.Wrap .mainContent .contentBox .petnerContent .contentHeader .contentHeaderLeft .petners {
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem 3rem;
+  border-radius: 50%;
+}
+
+.Wrap .mainContent .contentBox .petnerContent .contentHeader .contentHeaderRight {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.Wrap .mainContent .contentBox .petnerContent .contentHeader .contentHeaderRight .petnerName {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.Wrap .mainContent .contentBox .petnerContent .cutePet {
+  margin-top: 1rem;
+  width: 100%;
+  height: 25rem;
+  overflow: hidden;
+}
+
+.Wrap .mainContent .contentBox .petnerContent .cutePet .cutePetImg {
+  width: 100%;
+  height: 25rem;
+}
+
+.Wrap .mainContent .contentBox .petnerContent .contentFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Wrap .mainContent .contentBox .petnerContent .contentFooter .times {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  line-height: 8rem;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.Wrap .mainContent .contentBox .petnerContent .contentFooter .petName {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  line-height: 8rem;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.8);
+}
 /*# sourceMappingURL=petner.css.map */
