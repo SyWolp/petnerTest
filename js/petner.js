@@ -9,6 +9,7 @@ function getTitle(){
   let contentBox = document.querySelector(".contentBox");
   let leftButton = document.querySelector(".leftButton");
   let rightButton = document.querySelector(".rightButton");
+  let reload = document.querySelector(".reload");
   try {
     info = await getTitle();
     mainInfo.push(...info);
@@ -62,5 +63,7 @@ function getTitle(){
       contentBox.style.transform = `translate(${clickWidth}px,0)`;
     }
   })
-  
+  reload.addEventListener('click',()=>{
+    location.reload();
+  })
 })();

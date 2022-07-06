@@ -6,6 +6,15 @@ html,body {
 }
 .Wrap {
     width: 100%;
+    position: relative;
+    .reload {
+        position: absolute;
+        top: 10rem;
+        right: 1rem;
+        font-size: 3rem;
+        z-index: 1;
+        cursor: pointer;
+    }
     .headTitle {
         margin: 10rem auto;
         text-align: center;
@@ -29,10 +38,11 @@ html,body {
             line-height: 5.5rem;
             cursor: pointer;
             font-size: 3rem;
-            background-color: beige;
+            background-color: rgb(255, 255, 255);
             border-radius: 50%;
             text-align: center;
             z-index: 1;
+            box-shadow: 0.1rem 0.1rem 1rem rgb(155, 155, 155);
         }
         .leftButton {
             top: 50%;

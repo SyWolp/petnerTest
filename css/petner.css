@@ -11,6 +11,16 @@ html, body {
 
 .Wrap {
   width: 100%;
+  position: relative;
+}
+
+.Wrap .reload {
+  position: absolute;
+  top: 10rem;
+  right: 1rem;
+  font-size: 3rem;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .Wrap .headTitle {
@@ -41,10 +51,12 @@ html, body {
   line-height: 5.5rem;
   cursor: pointer;
   font-size: 3rem;
-  background-color: beige;
+  background-color: white;
   border-radius: 50%;
   text-align: center;
   z-index: 1;
+  -webkit-box-shadow: 0.1rem 0.1rem 1rem #9b9b9b;
+          box-shadow: 0.1rem 0.1rem 1rem #9b9b9b;
 }
 
 .Wrap .mainContent .leftButton {
