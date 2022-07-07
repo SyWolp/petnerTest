@@ -31,12 +31,12 @@ html, body {
 .Wrap .headTitle .headTtitleOne {
   padding-bottom: 0.5rem;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .Wrap .headTitle .headTtitleTwo {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .Wrap .mainContent {
@@ -47,6 +47,7 @@ html, body {
 .Wrap .mainContent .buttons {
   width: 5rem;
   height: 5rem;
+  margin: 0 0.5rem;
   position: absolute;
   line-height: 4.3rem;
   cursor: pointer;

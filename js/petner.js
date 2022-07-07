@@ -1,5 +1,5 @@
 (async function main() { 
-  
+  // api
   function getTitle(){
     const response = fetch("https://petner.kr/api/v6/publics");
     return response.then(res => res.json());
@@ -18,7 +18,7 @@
     catch(error){
       console.log(error);
     }
-    console.log(mainInfo);
+    // HTML Plus
     let infoPlusHTML = [];
     for(let i = 0; i < mainInfo.length; i++) {
       infoPlusHTML.push(`
@@ -44,18 +44,9 @@
     for(let i = 0; i < infoPlusHTML.length; i++) {
       contentBox.innerHTML += infoPlusHTML[i];
     }
+    // Move
     let clickWidth = 0;
-    rightButton.addEventListener("click",()=>{
-      if(clickWidth <= -1280) {
-        clickWidth = 0;
-        contentBox.style.transform = `translate(${clickWidth},0)`;
-      }else {
-        clickWidth = clickWidth - 128;
-        contentBox.style.transform = `translate(${clickWidth}px,0)`;
-      }
-    })
-    leftButton.addEventListener("click",()=>{
-      console.log(clickWidth)
+    const leftMove = () => {
       if(clickWidth !== 0) {
         clickWidth = clickWidth + 128;
         contentBox.style.transform = `translate(${clickWidth}px,0)`;
@@ -63,9 +54,28 @@
         clickWidth = -1280;
         contentBox.style.transform = `translate(${clickWidth}px,0)`;
       }
+    }
+    const rightMove = () => {
+      if(clickWidth <= -1280) {
+        clickWidth = 0;
+        contentBox.style.transform = `translate(${clickWidth},0)`;
+      }else {
+        clickWidth = clickWidth - 128;
+        contentBox.style.transform = `translate(${clickWidth}px,0)`;
+      }
+    }
+    rightButton.addEventListener("click",()=>{
+      rightMove();
     })
+    leftButton.addEventListener("click",()=>{
+      leftMove();
+    })
+    // auto Move
+    setInterval(() => {
+      rightMove();
+    }, 2000);
   }
-  // 메인 종료
+  // html end
   window.onload = mainContent();
   const contentBox = document.querySelector(".contentBox");
   const reload = document.querySelector(".reload");
@@ -73,5 +83,5 @@
     contentBox.innerHTML = "";
     mainContent();
   })
-  // 리로드
+  // reload
 })();
