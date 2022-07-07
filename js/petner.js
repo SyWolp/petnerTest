@@ -4,7 +4,7 @@
     const response = fetch("https://petner.kr/api/v6/publics");
     return response.then(res => res.json());
   }
-
+  let intervalPet; // 전역으로 변수 선언해야 하는게 조금 맘에 걸리긴 한다..
   async function mainContent() {
     let info;
     let mainInfo = [];
@@ -71,7 +71,7 @@
       leftMove();
     })
     // auto Move
-    setInterval(() => {
+    intervalPet = setInterval(() => {
       rightMove();
     }, 2000);
   }
@@ -81,6 +81,8 @@
   const reload = document.querySelector(".reload");
   reload.addEventListener('click',()=>{
     contentBox.innerHTML = "";
+    clearInterval(intervalPet);
+    contentBox.style.transform = `translate(0,0)`;
     mainContent();
   })
   // reload
