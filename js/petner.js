@@ -8,9 +8,9 @@
   async function mainContent() {
     let info;
     let mainInfo = [];
-    let contentBox = document.querySelector(".contentBox");
-    let leftButton = document.querySelector(".leftButton");
-    let rightButton = document.querySelector(".rightButton");
+    const contentBox = document.querySelector(".contentBox");
+    const leftButton = document.querySelector(".leftButton");
+    const rightButton = document.querySelector(".rightButton");
     try {
       info = await getTitle();
       mainInfo.push(...info);
