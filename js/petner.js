@@ -19,9 +19,8 @@
       console.log(error);
     }
     // HTML Plus
-    let infoPlusHTML = [];
     for(let i = 0; i < mainInfo.length; i++) {
-      infoPlusHTML.push(`
+      contentBox.innerHTML += `
       <div class="petnerContent">
         <div class="contentHeader">
           <div class="contentHeaderLeft">
@@ -39,10 +38,7 @@
           <div class="times">~시간 전</div>
           <div class="petName">${mainInfo[i].companion.name}</div>
         </footer>
-      </div>`);
-    }
-    for(let i = 0; i < infoPlusHTML.length; i++) {
-      contentBox.innerHTML += infoPlusHTML[i];
+      </div>`;
     }
     // Move
     let clickWidth = 0;
