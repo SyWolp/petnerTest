@@ -48,15 +48,19 @@ html, body {
   width: 5rem;
   height: 5rem;
   position: absolute;
-  line-height: 5.5rem;
+  line-height: 4.3rem;
   cursor: pointer;
   font-size: 3rem;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 50%;
   text-align: center;
   z-index: 1;
   -webkit-box-shadow: 0.1rem 0.1rem 1rem #9b9b9b;
           box-shadow: 0.1rem 0.1rem 1rem #9b9b9b;
+}
+
+.Wrap .mainContent .buttons:hover {
+  background-color: white;
 }
 
 .Wrap .mainContent .leftButton {
